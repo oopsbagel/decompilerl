@@ -24,7 +24,7 @@ defmodule Decompilerl.Mixfile do
   end
 
   defp deps do
-    [{:ex_doc, "~> 0.10", only: :dev}]
+    [{:ex_doc, "~> 0.38.2", only: :dev}]
   end
 
   defp package do
