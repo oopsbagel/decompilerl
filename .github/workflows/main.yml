@@ -1,0 +1,14 @@
+name: main
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: podman build
+        run: podman build -t decompilerl:latest .
